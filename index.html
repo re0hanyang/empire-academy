@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090a0d">
+  <meta name="description" content="제국학원 공식 학생 기록 및 세계관 안내 사이트">
+  <title>제국학원 | EMPIRE ACADEMY</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="제국학원 홈">
+      <span class="brand-mark">EA</span>
+      <span>
+        <b>EMPIRE ACADEMY</b>
+        <small>CHEONGMYEONG · KOREA</small>
+      </span>
+    </a>
+    <nav class="main-nav">
+      <a href="#home">HOME</a>
+      <a href="#world">WORLD</a>
+      <a href="#students">STUDENTS</a>
+      <a href="#facilities">ACADEMY</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="메뉴 열기">☰</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <img src="assets/hero-campus.svg" alt="" class="hero-bg">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">THE MOST POWERFUL PRIVATE ACADEMY IN KOREA</p>
+        <h1>EMPIRE<br><span>ACADEMY</span></h1>
+        <p class="hero-copy">권력과 자본, 명예가 교과서가 되는 곳.<br>청명시의 초일류 사립학교, 제국학원.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#students">학생부 열람</a>
+          <a class="btn btn-ghost" href="#world">세계관 보기</a>
+        </div>
+      </div>
+      <div class="hero-footer">
+        <span>ACADEMIC YEAR 2026</span>
+        <span>CHEONGMYEONG CITY</span>
+        <span>EST. 1987</span>
+      </div>
+      <div class="scroll-cue">SCROLL <i></i></div>
+    </section>
+
+    <section id="world" class="section world-section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">01 / WORLD</p>
+          <h2>학교가 곧<br><em>사회</em>인 곳</h2>
+        </div>
+        <p class="section-lead">겉으로는 평등을 표방하지만, 학생들은 가문의 재력과 권력에 따라 네 개의 계급으로 나뉜다. 이곳에서 성적보다 강한 것은 이름이며, 이름보다 강한 것은 힘이다.</p>
+      </div>
+
+      <div class="rank-grid">
+        <article class="rank-card ruby"><span>01</span><b>RUBY</b><strong>상위 0.1%</strong><p>재벌·고위 정치인 자녀. 학원의 규칙을 만들고, 필요하다면 규칙마저 무시한다.</p></article>
+        <article class="rank-card sapphire"><span>02</span><b>SAPPHIRE</b><strong>상류 전문직</strong><p>대기업 임원·법조·의료계 자녀. 실무 권력을 장악하며 루비를 견제한다.</p></article>
+        <article class="rank-card emerald"><span>03</span><b>EMERALD</b><strong>상위 중산층</strong><p>중견기업·전문직 자녀. 평범한 다수를 차지하지만 상위 계급의 눈치를 본다.</p></article>
+        <article class="rank-card onyx"><span>04</span><b>ONYX</b><strong>특별전형</strong><p>성적 우수자와 사회적 배려 대상. 학비는 면제되지만 차별의 최전선에 놓인다.</p></article>
+      </div>
+
+      <div class="system-strip">
+        <div><span>EMPIRE POINT</span><b>제국 포인트</b><small>식사 · 기숙사 · 정보 · 특혜</small></div>
+        <div><span>STUDENT COUNCIL</span><b>학생회</b><small>학원을 움직이는 실질적 권력</small></div>
+        <div><span>SKY LOUNGE</span><b>스카이 라운지</b><small>최상위 계급의 거래와 암투</small></div>
+      </div>
+    </section>
+
+    <section id="students" class="section students-section">
+      <div class="section-head students-head">
+        <div>
+          <p class="eyebrow">02 / STUDENT RECORD</p>
+          <h2>학생부</h2>
+        </div>
+        <p class="section-lead">제국학원에 등록된 주요 학생 기록. 카드에는 이름, 국적, 학년, 계급만 표시됩니다.</p>
+      </div>
+
+      <div class="filters">
+        <div class="filter-row" id="rankFilters">
+          <button class="filter active" data-rank="all">ALL</button>
+          <button class="filter ruby-filter" data-rank="루비">RUBY</button>
+          <button class="filter sapphire-filter" data-rank="사파이어">SAPPHIRE</button>
+          <button class="filter emerald-filter" data-rank="에메랄드">EMERALD</button>
+          <button class="filter onyx-filter" data-rank="오닉스">ONYX</button>
+        </div>
+        <div class="search-wrap">
+          <input id="searchInput" type="search" placeholder="학생 이름 검색" autocomplete="off">
+          <span>⌕</span>
+        </div>
+      </div>
+
+      <div class="student-grid" id="studentGrid"></div>
+      <p class="empty-state" id="emptyState">검색 결과가 없습니다.</p>
+    </section>
+
+    <section id="facilities" class="section facilities-section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">03 / ACADEMY</p>
+          <h2>제국학원의<br><em>주요 시설</em></h2>
+        </div>
+        <p class="section-lead">학생들의 일상은 수업만으로 결정되지 않는다. 어디에 들어갈 수 있는지, 무엇을 살 수 있는지가 곧 계급이다.</p>
+      </div>
+
+      <div class="facility-grid">
+        <article class="facility-card large"><span>01</span><h3>SKY LOUNGE</h3><p>루비와 극소수 사파이어만 출입할 수 있는 최고급 라운지. 거래와 권력 게임의 중심.</p></article>
+        <article class="facility-card"><span>02</span><h3>STUDENT COUNCIL</h3><p>학교의 실질적인 통치 기구.</p></article>
+        <article class="facility-card"><span>03</span><h3>EMPIRE MARKET</h3><p>제국 포인트로 특혜와 정보를 거래한다.</p></article>
+        <article class="facility-card"><span>04</span><h3>ACADEMY HALL</h3><p>공식 행사와 계급별 사교의 무대.</p></article>
+        <article class="facility-card"><span>05</span><h3>RESIDENCE</h3><p>포인트와 계급에 따라 달라지는 기숙사.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>EMPIRE ACADEMY</strong>
+      <span>CHEONGMYEONG CITY · REPUBLIC OF KOREA</span>
+    </div>
+    <small>FICTIONAL SCHOOL / CHARACTER DATABASE</small>
+  </footer>
+
+  <script src="characters.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

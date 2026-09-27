@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1a1c22"/><stop offset="1" stop-color="#777b85" stop-opacity=".42"/></linearGradient></defs>
+<rect width="600" height="800" fill="#0d0f13"/>
+<rect x="22" y="22" width="556" height="756" rx="4" fill="url(#g)" stroke="#d2c5a0" stroke-opacity=".16"/>
+<circle cx="300" cy="300" r="112" fill="#07080a" stroke="#d2c5a0" stroke-opacity=".22" stroke-width="2"/>
+<text x="300" y="320" text-anchor="middle" fill="#ded8ca" font-family="Georgia, serif" font-size="92" letter-spacing="5">마페</text>
+<path d="M110 640 Q300 485 490 640 L490 755 L110 755Z" fill="#090a0d" stroke="#d2c5a0" stroke-opacity=".13"/>
+<text x="300" y="705" text-anchor="middle" fill="#b9ad91" font-family="Arial, sans-serif" font-size="17" letter-spacing="4">EMPIRE ACADEMY</text>
+<text x="300" y="742" text-anchor="middle" fill="#777" font-family="Arial, sans-serif" font-size="11" letter-spacing="3">오닉스</text>
+</svg>

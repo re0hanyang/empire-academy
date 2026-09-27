@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+<defs>
+ <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#080b12"/><stop offset=".55" stop-color="#1b2029"/><stop offset="1" stop-color="#07090d"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a9b8c9" stop-opacity=".35"/><stop offset="1" stop-color="#303844" stop-opacity=".1"/></linearGradient>
+ <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#b69b65"/><stop offset=".5" stop-color="#e0cc99"/><stop offset="1" stop-color="#8e7545"/></linearGradient>
+ <filter id="blur"><feGaussianBlur stdDeviation="15"/></filter>
+</defs>
+<rect width="1920" height="1080" fill="url(#sky)"/>
+<circle cx="1520" cy="210" r="170" fill="#d7c590" opacity=".08" filter="url(#blur)"/>
+<path d="M0 820 L220 650 430 745 610 570 810 710 1010 500 1220 680 1410 545 1610 690 1920 500 V1080 H0Z" fill="#090b0f"/>
+<!-- central academy -->
+<path d="M420 770 L520 405 L960 250 L1400 405 L1500 770Z" fill="#12161c" stroke="#d5c7a0" stroke-opacity=".18" stroke-width="4"/>
+<path d="M530 405 L960 250 L1390 405" fill="none" stroke="url(#gold)" stroke-opacity=".42" stroke-width="3"/>
+<path d="M615 730 L960 350 L1305 730" fill="none" stroke="#8894a2" stroke-opacity=".22" stroke-width="3"/>
+<path d="M690 735 V520 L960 370 L1230 520 V735" fill="#0b0d11" stroke="#c9b98f" stroke-opacity=".2"/>
+<!-- windows -->
+<g fill="url(#glass)" stroke="#aeb7c2" stroke-opacity=".22">
+ <path d="M745 690 V550 L790 525 V690Z"/><path d="M820 690 V510 L865 485 V690Z"/>
+ <path d="M895 690 V470 L940 445 V690Z"/><path d="M980 690 V445 L1025 470 V690Z"/>
+ <path d="M1055 690 V485 L1100 510 V690Z"/><path d="M1130 690 V525 L1175 550 V690Z"/>
+</g>
+<!-- wings -->
+<path d="M200 800 L330 520 L610 440 L570 800Z" fill="#11151a" stroke="#9b8b66" stroke-opacity=".16" stroke-width="3"/>
+<path d="M1720 800 L1590 520 L1310 440 L1350 800Z" fill="#11151a" stroke="#9b8b66" stroke-opacity=".16" stroke-width="3"/>
+<g fill="#6d7988" opacity=".22">
+ <path d="M300 720 L360 570 L405 555 L360 720Z"/><path d="M430 720 L465 545 L510 530 L490 720Z"/>
+ <path d="M1620 720 L1560 570 L1515 555 L1560 720Z"/><path d="M1490 720 L1455 545 L1410 530 L1430 720Z"/>
+</g>
+<!-- foreground -->
+<path d="M0 900 Q960 770 1920 900 V1080 H0Z" fill="#06080b"/>
+<path d="M650 1080 L960 760 L1270 1080" fill="#0e1116" stroke="#bca674" stroke-opacity=".13"/>
+<path d="M960 760 V1080" stroke="#bca674" stroke-opacity=".1"/>
+<g fill="#cdbb8c" opacity=".18"><circle cx="960" cy="300" r="4"/><circle cx="520" cy="400" r="3"/><circle cx="1400" cy="400" r="3"/></g>
+</svg>
